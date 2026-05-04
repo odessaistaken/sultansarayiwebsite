@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    overflow-x: hidden;
+    /* Prevent iOS rubber-band scroll from revealing white flash */
+    background-color: #000;
+  }
+
+  /* Remove 300ms tap delay on touch devices */
+  * {
+    touch-action: manipulation;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
